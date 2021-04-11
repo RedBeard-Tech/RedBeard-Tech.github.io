@@ -1,9 +1,3 @@
-Hello and welcome to this blog. Edit the `index.md` file to change this content. All pages on the blog, including this one, use [Markdown](https://guides.github.com/features/mastering-markdown/). You can include images:
+## Data Science
 
-![Image of fast.ai logo](images/logo.png)
-
-## Data Science Blog
-
-Examples of links [link to fast.ai](https://www.fast.ai). Posts will appear after this file. 
-
-Multiple Sclerosis, Data science approach
+These blogs are meant for entry level to intermediate Data scientists and curiously minded people. The blogs mainly showcase how AI can be and is used (by me) in real world settings. The blogs will also contain tutorials and introductions to some of the latest libraries and frameworks as well as further study material. Enjoy!
