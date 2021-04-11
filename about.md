@@ -1,4 +1,3 @@
 # About
 
-This is where you put the contents of your *About* page. Like all your pages, it's in [Markdown](https://guides.github.com/features/mastering-markdown/) format.
-
+I have a master's degree in Data Science and have been working at InsightOne Nordics as a Data Scientist/Analyst for approximately a year. During my time at InsightOne I have realized that a large number of small to medium buisnesses lack an understanding of what AI can do for their buisnesses and how to apply it. In my posts, I plan to describe the projects that I have been a part of and how these projects can be used in different buisness areas. 
