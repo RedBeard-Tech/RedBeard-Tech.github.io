@@ -53,8 +53,8 @@ The following steps should be undertaken for a random target and a valid target 
 Steps:
 1) Split data into training and test set (This is a bit of a challenge since you only have 100 rows) IDK if you should do this
 2) Choose the different algorithms to use (catboost, xgboost, randomforest,svc(linear) has to be an algorithm where you can measure feature importance
-3) Use RFECV to fit the different models on whole dataset for finding optimum number of features for each model
-4) Use a linear type of algorithm to fit the first 2 principal components of the extracted features
+3) Use RFECV to fit the different models on training/whole dataset for finding optimum number of features for each model
+4) Use a linear type of algorithm to fit the first 2 principal components of the extracted features on whole. If you are able to fit on whole after finding RFECV on training set only then this is a type of validation. 
 5) Select the feature sets with the highest linear model fit
 
 The weak side of these steps is that you cant validate your results. The only validation you sort of have is due to testing the steps on a random target and hopefully seeing bad results. If  good results are indicated then this method is obviously a bad one if you cant validate it.
