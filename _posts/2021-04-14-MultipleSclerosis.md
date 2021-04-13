@@ -7,7 +7,7 @@ Table of contents:
 
 ## Introduction
 
-I wrote my master's degree in coorperation with NOFIMA, a leading research institute with offices in Norway. During this time I had the pleasure of working with my supervisor Ellen Mosleth, who at the time was writing the following [research paper](https://www.nature.com/articles/s41598-021-82388-w). If you clicked on the link and read the names of the co-authors you might have noticed that my name is listed as one of them :D. If you wish to find out why you can continue reading this post.  
+I wrote my master's degree in coorperation with NOFIMA, a leading research institute with offices in Norway. During this time I had the pleasure of working with my supervisor Ellen Mosleth, who at the time was writing the following [research paper](https://www.nature.com/articles/s41598-021-82388-w). If you clicked on the link and read the names of the co-authors you might have noticed that my name is listed as one of them. If you wish to find out why you can continue reading this post.  
 
 
 
@@ -18,6 +18,11 @@ What is MS?
 Why MS? 
 What is the current understanding of MS?
 What did the research paper linked do?
+What are the different types of MS?
+How many people get MS?
+Medicine for MS?
+
+Inflammation vs no inflammation. How is this significant wrt medicine?
 
 
 ## Aim
@@ -42,6 +47,17 @@ Information about how the data was gathered and when
 - What is RFECV, PCA, different mahcine learning models?
 - maybe link your master thesis for greater detail? 
 - Weak links to your methods?
+
+The following steps should be undertaken for a random target and a valid target to see if for a random target you can find features that differentiate the samples. If not then great this method actually finds structure in the underlying features separation MS and inflammation. 
+
+Steps:
+1) Split data into training and test set (This is a bit of a challenge since you only have 100 rows) IDK if you should do this
+2) Choose the different algorithms to use (catboost, xgboost, randomforest,svc(linear) has to be an algorithm where you can measure feature importance
+3) Use RFECV to fit the different models on whole dataset for finding optimum number of features for each model
+4) Use a linear type of algorithm to fit the first 2 principal components of the extracted features
+5) Select the feature sets with the highest linear model fit
+
+The weak side of these steps is that you cant validate your results. The only validation you sort of have is due to testing the steps on a random target and hopefully seeing bad results. If  good results are indicated then this method is obviously a bad one if you cant validate it.
 
 ## Code
 
